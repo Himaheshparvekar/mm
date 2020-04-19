@@ -1,7 +1,7 @@
 import {Component} from '@angular/core'
 @Component({
 selector: 'messages',
-template: 'this is a message component.The mumber of messges are : {{messages.length}}  The first message is {{messages[0].text}} owner is {{messages[0].owner}} '
+template: 'this is a message component. <div *ngFor="let msg of messages"> {{msg.text}} by {{msg.owner}}</div> '
 
 
 
