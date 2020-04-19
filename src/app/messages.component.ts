@@ -4,7 +4,13 @@ selector: 'messages',
 template: `
 <div *ngFor="let message of messages">
 
-    <mat-card> {{message.owner}} by: {{message.text}} </mat-card>
+    <mat-card style="margin:8px;"> 
+    
+    <mat-card-title>{{message.owner}}  </mat-card-title>
+    
+
+    <mat-card-content>  by: {{message.text}} </mat-card-content>
+    </mat-card>
     
 
 </div>
